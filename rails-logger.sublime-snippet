@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+p "--------------------------------------------------"
+p "${1:thing}:", ${1:thing}
+p "--------------------------------------------------"
+]]></content>
+    <tabTrigger>log</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>logger.info</description>
+</snippet>
