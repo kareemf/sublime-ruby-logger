@@ -3,10 +3,12 @@ Sublime Text Ruby Logger
 
 Sublime snippet to log (with dashes).
 
-Type `log` and hit tab. You'll get:
+Type `>log` and hit tab. You'll get:
 
 ```
-p "--------------------------------------------------"
-p "thing:", thing
-p "--------------------------------------------------"
+logger.info "--------------------------------------------------"
+logger.info "thing:" + thing.to_s
+logger.info "--------------------------------------------------"
 ```
+
+Snippets are also available via `>debug` and `>warn` for `logger.debug` and `logger.warn`, respectively.
