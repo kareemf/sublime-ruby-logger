@@ -1,10 +1,33 @@
 <snippet>
     <content><![CDATA[
-p "--------------------------------------------------"
-p "${1:thing}:", ${1:thing}
-p "--------------------------------------------------"
+logger.info "--------------------------------------------------"
+logger.info "${1:thing}:" + ${1:thing}.to_s
+logger.info "--------------------------------------------------"
 ]]></content>
-    <tabTrigger>log</tabTrigger>
+    <tabTrigger>>log</tabTrigger>
     <scope>source.ruby</scope>
     <description>logger.info</description>
 </snippet>
+
+<snippet>
+    <content><![CDATA[
+logger.debug "--------------------------------------------------"
+logger.debug "${1:thing}:" + ${1:thing}.to_s
+logger.debug "--------------------------------------------------"
+]]></content>
+    <tabTrigger>>debug</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>logger.debug</description>
+</snippet>
+
+<snippet>
+    <content><![CDATA[
+logger.warn "--------------------------------------------------"
+logger.warn "${1:thing}:" + ${1:thing}.to_s
+logger.warn "--------------------------------------------------"
+]]></content>
+    <tabTrigger>>warm</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>logger.warn</description>
+</snippet>
+
