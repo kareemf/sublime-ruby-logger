@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 logger.info "--------------------------------------------------"
-logger.info "${1:thing}:" + ${1:thing}.to_s
+logger.info "${1:thing}: #\{${1:thing}\}"
 logger.info "--------------------------------------------------"
 ]]></content>
     <tabTrigger>>log</tabTrigger>
@@ -12,7 +12,7 @@ logger.info "--------------------------------------------------"
 <snippet>
     <content><![CDATA[
 logger.debug "--------------------------------------------------"
-logger.debug "${1:thing}:" + ${1:thing}.to_s
+logger.debug "${1:thing}: #\{${1:thing}\}"
 logger.debug "--------------------------------------------------"
 ]]></content>
     <tabTrigger>>debug</tabTrigger>
@@ -23,11 +23,10 @@ logger.debug "--------------------------------------------------"
 <snippet>
     <content><![CDATA[
 logger.warn "--------------------------------------------------"
-logger.warn "${1:thing}:" + ${1:thing}.to_s
+logger.warn "${1:thing}: #\{${1:thing}\}"
 logger.warn "--------------------------------------------------"
 ]]></content>
-    <tabTrigger>>warm</tabTrigger>
+    <tabTrigger>>warn</tabTrigger>
     <scope>source.ruby</scope>
     <description>logger.warn</description>
 </snippet>
-

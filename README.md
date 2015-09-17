@@ -7,7 +7,7 @@ Type `>log` and hit tab. You'll get:
 
 ```
 logger.info "--------------------------------------------------"
-logger.info "thing:" + thing.to_s
+logger.info "thing: #{thing}"
 logger.info "--------------------------------------------------"
 ```
 
